@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Personas
+{% endblock title %}
+
+{% block content %}
+
+  <table class="responsive-table">
+      <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Edad</th>
+            <th>CURP</th>
+            <th>Domicilio</th>
+            <th>Sexo</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for persona in personas %}
+        <tr>
+          <td>{{persona.nombre}}</td>
+          <td>{{persona.apellidoP}}</td>
+          <td>{{persona.apellidoM}}</td>
+          <td>{{persona.edad}}</td>
+          <td>{{persona.curp}}</td>
+          <td>{{persona.domicilio}}</td>
+          <td>{{persona.sexo}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+{% endblock content %}
