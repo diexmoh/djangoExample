@@ -25,7 +25,7 @@ SECRET_KEY = '244lp2@ov-6ryij%9ofipv8kq2rjo-uo2mzqds)mc@vj^d-ld*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sheltered-refuge-12014.herokuapp.com']
 
 
 # Application definition
