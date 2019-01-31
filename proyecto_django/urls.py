@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from apps.Persona.views import ListViewPersona
+from .Persona.views import ListViewPersona
 
 urlpatterns = [
     url(r'^$', ListViewPersona.as_view(), name = 'ListaPersonas'),
